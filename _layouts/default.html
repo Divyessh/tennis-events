@@ -1,0 +1,222 @@
+<style>
+    /* <link rel="stylesheet" type="text/scss" href="/assets/css/main.scss" /> */
+    /* <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" /> */
+    @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+html {
+    font-family: 'Lora', sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+header {
+    display: block;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+
+  box-sizing: border-box;
+}
+.site-logo {
+    position: absolute;
+    color: #424242;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
+    white-space: nowrap;
+}
+.site-header ul li {
+    transition: background-color .3s;
+    float: left;
+    padding: 0;
+}
+.site-header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.99);
+    z-index: 1000;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 1px 5px #ddd;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.site-header ul {
+    margin: 0 0 0 50px;
+    list-style: none;
+}
+.site-header ul a {
+    transition: background-color .3s;
+    font-size: 1rem;
+    color: #424242;
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.site-header ul a:hover {
+          background-color: grey;
+          color: white;
+        }
+.site-logo {
+    position: absolute;
+    color: #424242;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
+    white-space: nowrap;
+}
+.site-header .site-logo .logo {
+    height: 35px;
+    width: 70px;
+}
+.site-header, .site-content, .site-footer {
+    padding-left: 1em;
+    padding-right: 1em;
+}.site-content {
+    flex: 1;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+a {
+    background-color: transparent;
+}
+img {
+    border: 0;
+}
+.event-list-header {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-justify-content: flex-start;
+    justify-content: center;
+}
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding-top: 4em;
+}
+
+body {
+    margin: 0;
+}
+.event--list {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-justify-content: flex-start;
+    justify-content: center;
+}
+.event--list .event {
+    text-decoration: none;
+    color: #111;
+    width: 330px;
+    margin: 0.5em;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    box-shadow: 0 1px 2px #ccffcc;
+    transition: box-shadow .25s;
+    padding: 20px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    background-color: #fff;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.event--list .event--header {
+    margin-top: 0;
+    font-size: 18px;
+}
+.event--list .event--date, .event--list .event--url {
+    font-size: 12px;
+    margin: 0.3em;
+}
+.card-panel {
+    transition: box-shadow .25s;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+hr.simple {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+hr.accented {
+    padding: 0;
+    border: none;
+    border-top: medium double #ccc;
+    color: #ccc;
+    text-align: center;
+    margin: 4em 2em 2em 2em;
+}
+hr.accented:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.8em;
+    font-size: 1.5em;
+    padding: 0 0.3em;
+    line-height: 1.5em;
+    background: white;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.site-content {
+    max-width: 850px;
+    margin: 0 auto;
+    min-width: 320px;
+}
+.site-footer {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    text-align: center;
+    font-size: 12px;
+}
+</style>
+
+<body background="{{site.baseurl}}/assets/images/background.jpg" class="site  page--home  ">
+    <header class="site-header">
+        <nav>
+           <a class="site-logo" href="{{site.baseurl}}/"><img class="logo" src="{{site.baseurl}}/assets/images/logo.png"></a>
+           <ul>
+              <li><a style="padding:10px;" href="https://github.com/dicyessh/tennis-events#readme">Submit an event</a></li>
+           </ul>
+        </nav>
+    </header>
+    <main class="site-content"> 
+        {{content}}
+    </main>
+    <footer class="site-footer">
+        <p>
+            © divyessh.github.io/tennis-events •
+            <a href="{{site.baseurl}}/about/">About</a> |
+            <a href="https://github.com/divyessh">Developers</a> |
+            <a href="https://github.com/divyessh/tennis-events/issues/new">Report an issue</a>
+        </p>
+    </footer>
+</body>
