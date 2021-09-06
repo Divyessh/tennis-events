@@ -166,7 +166,7 @@ a:-webkit-any-link {
         <h3 style="text-align: center;">Events</h3>
         </div>
         <div class="event--list">
-        {% assign events = site.posts | sort: 'date' | reverse %}
+        {% assign events = paginator.posts | sort: 'date' | reverse %}
         {% assign count = 0 %}
         {% assign current_date = "now" | date: "%Y-%m-%d %H:%M" %}
        
@@ -203,6 +203,23 @@ a:-webkit-any-link {
                 
             {% endfor %}
     
+        </div>
+        <div>
+            {% if paginator.total_pages > 1 %}
+            <ul>
+                {{paginator.previous_page}}
+            {% if paginator.previous_page!=nil %}
+            <li>
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Previous</a>
+            </li>
+            {% endif %}
+            {% if paginator.next_page!=nil %}
+            <li>
+                <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next</a>
+            </li>
+            {% endif %}
+            </ul>
+            {% endif %}
         </div>
     </main>
     <footer class="site-footer">
