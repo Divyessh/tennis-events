@@ -27,3 +27,5 @@ pagination:
   debug: true
   permalink: '/:num/'
   category: 'posts'
+
+future: true
