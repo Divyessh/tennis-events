@@ -20,5 +20,4 @@ defaults:
       layout: "post"
       categories: jekyll update
 
-paginate: 1
-paginate_path: "/page:num/"
+future : true
