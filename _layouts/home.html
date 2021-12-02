@@ -198,7 +198,9 @@ a:-webkit-any-link {
                 <!-- <br> -->
                 <!-- <a style="color: rgb(21, 112, 134); text-decoration: none;" href="/test-jekyll{{ post.url }} "><h3>{{ post.title }}</h3></a>  -->
                 <p class="event--url" style="color: #424242;">{{ post.link | truncate:29 }}</p>
-           
+                {%if page.image%}
+                <p class="event--image"><img src="{{site.base_url}}/tennis-events/assets/images/{{page.image}}" alt="Image" height=30></p>
+                {%endif%}
                 </a>
                 
             {% endfor %}

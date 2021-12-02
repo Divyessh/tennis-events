@@ -240,6 +240,9 @@ hr.accented:after {
                     
                 </header>
                 <hr class="simple">
+                {%if page.image%}
+                <img src="{{site.base_url}}/tennis-events/assets/images/{{page.image}}" alt="Image" height=300>
+                {%endif%}
                 {{ content }}
                 <hr class="accented">
             </article>
