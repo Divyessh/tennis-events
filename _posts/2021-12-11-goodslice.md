@@ -6,3 +6,7 @@ link:
 image: goodslice.jpg
 ---
 
+{% imagesize image:img %}
+<img src='/tennis-events/assets/images/goodslice.jpg' width='600' height='700'>
+
+
