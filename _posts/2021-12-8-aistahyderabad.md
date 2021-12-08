@@ -3,7 +3,8 @@ title: GVK AISTA Nationals Hyderabad 2021
 date:  8-12-2021  
 to_date: 12-12-2021
 link: https://www.aistatennis.com/new/tournamentview.php?tournament_id=78
-image: 
+image:
+published: false  
 ---
 
 Events  	  
